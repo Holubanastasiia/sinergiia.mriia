@@ -14,7 +14,62 @@
     <title>Document</title>
 </head>
 <body>
-<?php require __DIR__ . '/inc/header.php'; ?>
+<!--<?php require __DIR__ . '/inc/header.php'; ?>-->
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+            </div>
+            <nav class="header__menu">
+                <ul>
+                    <li>
+                        <a href="#about-us">Про нас</a>
+                    </li>
+                    <li>
+                        <a href="#goods">Продукти</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+                <div class="header__contact mob">
+                    <div class="header__contact-phone">
+                        <a href="tel:30634892909">+38 (063) 489-29-09</a>
+                    </div>
+                    <div class="header__contact-schedule">
+                        <p class="hours">
+                            Пн-Пт: 09:00 - 20:00
+                        </p>
+                        <p class="weekends">
+                            Сб-Нд: вихідний
+                        </p>
+                    </div>
+                </div>
+            </nav>
+            <div class="mob__nav">
+                <div class="header__contact">
+                    <div class="header__contact-phone">
+                        <a href="tel:30634892909">+38 (063) 489-29-09</a>
+                    </div>
+                    <div class="header__contact-schedule">
+                        <p class="hours">
+                            Пн-Пт: 09:00 - 20:00
+                        </p>
+                        <p class="weekends">
+                            Сб-Нд: вихідний
+                        </p>
+                    </div>
+                </div>
+
+                <div class="menu-mob" id="menu-btn">
+                    <p>
+                        Меню
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 
 <section class="banner">
     <div class="container">
@@ -178,8 +233,20 @@
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <?php require __DIR__ . '/inc/form.php'; ?>
-
+<!--            <?php require __DIR__ . '/inc/form.php'; ?>-->
+            <div class="contacts__form">
+                <p class="form__title">
+                    Зв’язатися з нами:
+                </p>
+                <form class="form" action="#">
+                    <input type="text" placeholder="Ім’я" name="name">
+                    <input type="text" placeholder="Прізвище" name="secondName">
+                    <input type="tel" placeholder="Телефон" name="phone">
+                    <div class="form__btn-wrapper">
+                        <button class="form__btn" type="submit">Відправити</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>

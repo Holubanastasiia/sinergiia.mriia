@@ -14,11 +14,13 @@
     <title>Document</title>
 </head>
 <body>
-<!--<?php require __DIR__ . '/inc/header.php'; ?>-->
 <header class="header">
     <div class="container">
         <div class="header__inner">
             <div class="logo">
+                <a href="/">
+                    <img src="./images/LamberJack_logo-1-svg.svg" alt="logo">
+                </a>
             </div>
             <nav class="header__menu">
                 <ul>
@@ -101,11 +103,16 @@
                     <p>
                         Самовивіз зі складу в Києві
                     </p>
+                    <br>
+                    <p>
+                        Градуйовані <span class="uppercase orange">знижки</span> для постійних клієнтів в залежності від об'ємів закупівлі
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <section id="about-us" class="about-us">
     <div class="container">
         <div class="about-us__inner">
@@ -138,6 +145,7 @@
         </div>
     </div>
 </section>
+
 <section class="adventure">
     <div class="container">
         <div class="adventure__title">
@@ -201,6 +209,7 @@
         </div>
     </div>
 </section>
+
 <section id="goods" class="goods">
     <div class="container">
         <div class="goods__title">
@@ -209,14 +218,78 @@
             </p>
         </div>
         <div class="goods__items">
-            <ul>
-                <li><img src="./images/item.png" alt="item"></li>
-                <li><img src="./images/item.png" alt="item"></li>
+            <ul class="first__line row">
+                <li>
+                    <img src="./images/good.png" alt="item">
+                    <div class="price__block">
+                        <p class="price__block-desc">
+                            Деревне вугілля
+                        </p>
+                        <p>
+                            в брендовому мішку
+                        </p>
+                        <p>
+                            <span class="orange">7 кг - 390 грн.</span>
+                        </p>
+                        <div class="price__block-btn">
+                            <a href="#contacts">Замовити</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/good.png" alt="item">
+                    <div class="price__block">
+                        <p class="price__block-desc">
+                            Брикет
+                        </p>
+                        <p>
+                            в брендовому мішку
+                        </p>
+                        <p>
+                            <span class="orange">2.5 кг - 140 грн.</span>
+                        </p>
+                        <div class="price__block-btn">
+                            <a href="#contacts">Замовити</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/item3.jpg" alt="item">
+                    <div class="price__block">
+                        <p class="price__block-desc">
+                            Вугілля/брикет
+                        </p>
+                        <p>
+                            більше 10 кг мішок
+                        </p>
+                        <p>
+                            <span class="orange">55 грн./кг</span>
+                        </p>
+                        <div class="price__block-btn">
+                            <a href="#contacts">Замовити</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
-            <ul>
-                <li><img src="./images/item.png" alt="item"></li>
-                <li><img src="./images/item.png" alt="item"></li>
-            </ul>
+<!--            <ul class="second__line row">-->
+<!--                <li>-->
+<!--                    <img src="./images/item3.jpg" alt="item">-->
+<!--                    <div class="price__block">-->
+<!--                        <p class="price__block-desc">-->
+<!--                            Вугілля/брикет-->
+<!--                        </p>-->
+<!--                        <p>-->
+<!--                            більше 10 кг мішок-->
+<!--                        </p>-->
+<!--                        <p>-->
+<!--                            <span class="orange">55 грн./кг</span>-->
+<!--                        </p>-->
+<!--                        <div class="price__block-btn">-->
+<!--                            <a href="#contacts">Замовити</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
         </div>
     </div>
 </section>
@@ -233,7 +306,6 @@
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-<!--            <?php require __DIR__ . '/inc/form.php'; ?>-->
             <div class="contacts__form">
                 <p class="form__title">
                     Зв’язатися з нами:

@@ -71,7 +71,7 @@ input, textarea {
 
 .header {
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   font-weight: 300;
@@ -85,11 +85,8 @@ input, textarea {
   justify-content: space-between;
   align-items: center;
 }
-.header__inner .logo {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #F24711;
+.header__inner .logo img {
+  max-height: 70px;
 }
 .header__inner nav ul {
   display: flex;
@@ -149,7 +146,6 @@ input, textarea {
   top: 0;
   background: url("../images/header.jpg") top/cover no-repeat;
   width: 100%;
-  max-height: 500px;
   padding: 146px 0 66px;
 }
 .banner .inner {
@@ -290,12 +286,44 @@ input, textarea {
 }
 .goods__items {
   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 40px;
 }
 .goods__items ul {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.goods__items ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.goods__items ul li img {
+  padding: 15px;
+  max-height: 160px;
+  filter: drop-shadow(10px -10px 40px rgba(242, 71, 17, 0.5));
+  border-radius: 30px;
+}
+.goods__items ul li .price__block {
+  text-align: center;
+  font-size: 14px;
+}
+.goods__items ul li .price__block span {
+  font-weight: 700;
+}
+.goods__items ul li .price__block-btn {
+  margin-top: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  background-color: #F24711;
+  border-radius: 30px;
+  padding: 4px;
 }
 
 .contacts {
@@ -428,11 +456,13 @@ input, textarea {
     line-height: 38px;
   }
   .banner__main-btn {
-    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 0;
   }
   .banner__delivery {
     margin-top: 25px;
-    padding: 35px 45px;
+    padding: 15px 20px;
   }
   .about-us {
     margin: 25px auto 40px;
@@ -473,8 +503,14 @@ input, textarea {
   .goods {
     padding: 25px 0 20px;
   }
-  .goods__items ul {
+  .goods__items {
     flex-direction: column;
+  }
+  .goods__items ul {
+    margin-top: 20px;
+  }
+  .goods__items ul.first__line li:first-child {
+    margin-right: 20px;
   }
   .contacts {
     padding: 25px 0 40px;

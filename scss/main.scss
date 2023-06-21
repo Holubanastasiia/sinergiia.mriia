@@ -75,7 +75,7 @@ input, textarea {
 
 .header {
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.9);
   position: fixed;
   top: 0;
   font-weight: 300;
@@ -90,10 +90,9 @@ input, textarea {
     align-items: center;
 
     .logo {
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      background-color: $brandColor;
+      & img {
+        max-height: 70px;
+      }
     }
 
     nav ul {
@@ -166,7 +165,6 @@ input, textarea {
   top: 0;
   background: url("../images/header.jpg") top/cover no-repeat;
   width: 100%;
-  max-height: 500px;
   padding: 146px 0 66px;
 
   .inner {
@@ -220,10 +218,6 @@ input, textarea {
     max-width: 355px;
     display: block;
     width: 100%;
-
-    &-inner {
-      //padding: 56px 48px;
-    }
 
     & p {
       margin-bottom: 10px;
@@ -297,6 +291,7 @@ input, textarea {
       align-items: center;
       margin: auto;
     }
+
     &-block {
       display: flex;
     }
@@ -336,12 +331,48 @@ input, textarea {
 
   &__items {
     display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 40px;
 
     & ul {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
-      margin: auto;
+      width: 100%;
+      flex-wrap: wrap;
+
+      & li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        & img {
+          padding: 15px;
+          max-height: 160px;
+          filter: drop-shadow(10px -10px 40px rgba(242, 71, 17, 0.5));
+          border-radius: 30px;
+        }
+
+        & .price__block {
+          text-align: center;
+          font-size: 14px;
+          & span {
+            font-weight: 700;
+          }
+
+          &-btn {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $brandColor;
+            border-radius: $borderRadius;
+            padding: 4px;
+          }
+        }
+      }
     }
   }
 }
@@ -503,30 +534,36 @@ input, textarea {
       }
 
       &-btn {
-        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        margin: 25px auto 0;
       }
     }
 
     &__delivery {
       margin-top: 25px;
-      padding: 35px 45px;
+      padding: 15px 20px;
     }
 
   }
 
   .about-us {
     margin: 25px auto 40px;
+
     &__inner {
       flex-direction: column-reverse;
     }
+
     &__info {
       &-title {
         margin-bottom: 40px;
       }
+
       &-text {
         margin-bottom: 10px;
       }
     }
+
     &__image {
       margin-top: 20px;
       margin-right: 0;
@@ -536,8 +573,10 @@ input, textarea {
 
   .adventure {
     padding: 25px 0 20px;
+
     &__items {
       margin-top: 25px;
+
       & ul {
 
       }
@@ -546,11 +585,13 @@ input, textarea {
         flex-direction: column;
       }
     }
+
     &__item {
       margin-right: 0;
 
       & .image {
         width: auto;
+
         p {
           font-size: 66px;
           line-height: 100px;
@@ -563,8 +604,21 @@ input, textarea {
     padding: 25px 0 20px;
 
     &__items {
+      flex-direction: column;
       & ul {
-        flex-direction: column;
+        margin-top: 20px;
+        //& li {
+        //  &:first-child {
+        //    margin-right: 20px;
+        //  }
+        //}
+      }
+      & ul.first__line {
+        & li {
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
       }
     }
   }
@@ -584,6 +638,7 @@ input, textarea {
       width: 100%;
       margin-right: 0;
       margin-top: 50px;
+
       & iframe {
         min-width: 100%;
         border-radius: 0;

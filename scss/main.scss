@@ -522,6 +522,7 @@ input, textarea {
   .banner {
     max-height: 100vh;
     height: 100vh;
+    padding: 110px 0 40px;
 
     & .inner {
       flex-direction: column;
@@ -531,9 +532,9 @@ input, textarea {
       margin-right: 0;
       text-align: center;
 
-      &__title {
-        font-size: 30px;
-        line-height: 38px;
+      &-title {
+        font-size: 26px;
+        line-height: 34px;
       }
 
       &-btn {
@@ -545,7 +546,7 @@ input, textarea {
 
     &__delivery {
       margin-top: 25px;
-      padding: 15px 20px;
+      padding: 10px 15px;
     }
 
   }

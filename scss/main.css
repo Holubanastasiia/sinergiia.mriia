@@ -446,6 +446,7 @@ input, textarea {
   .banner {
     max-height: 100vh;
     height: 100vh;
+    padding: 110px 0 40px;
   }
   .banner .inner {
     flex-direction: column;
@@ -454,9 +455,9 @@ input, textarea {
     margin-right: 0;
     text-align: center;
   }
-  .banner__main__title {
-    font-size: 30px;
-    line-height: 38px;
+  .banner__main-title {
+    font-size: 26px;
+    line-height: 34px;
   }
   .banner__main-btn {
     display: flex;
@@ -465,7 +466,7 @@ input, textarea {
   }
   .banner__delivery {
     margin-top: 25px;
-    padding: 15px 20px;
+    padding: 10px 15px;
   }
   .about-us {
     margin: 25px auto 40px;

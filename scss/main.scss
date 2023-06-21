@@ -347,10 +347,12 @@ input, textarea {
         align-items: center;
         flex-direction: column;
         justify-content: center;
+        width: 230px;
 
         & img {
           padding: 15px;
           max-height: 160px;
+          width: auto;
           filter: drop-shadow(10px -10px 40px rgba(242, 71, 17, 0.5));
           border-radius: 30px;
         }
@@ -527,6 +529,7 @@ input, textarea {
 
     &__main {
       margin-right: 0;
+      text-align: center;
 
       &__title {
         font-size: 30px;
@@ -555,11 +558,13 @@ input, textarea {
     }
 
     &__info {
+      text-align: justify;
       &-title {
         margin-bottom: 40px;
       }
 
       &-text {
+        font-size: 16px;
         margin-bottom: 10px;
       }
     }
@@ -607,14 +612,10 @@ input, textarea {
       flex-direction: column;
       & ul {
         margin-top: 20px;
-        //& li {
-        //  &:first-child {
-        //    margin-right: 20px;
-        //  }
-        //}
       }
       & ul.first__line {
         & li {
+          width: auto;
           &:first-child {
             margin-right: 20px;
           }
